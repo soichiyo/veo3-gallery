@@ -33,7 +33,7 @@ export const ErrorModal: React.FC<ErrorModalProps> = ({
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-400 hover:text-white z-10 p-2 rounded-full bg-transparent hover:bg-gray-700 transition-colors"
-          aria-label="Close error message">
+          aria-label="エラーメッセージを閉じる">
           <XMarkIcon className="w-6 h-6" />
         </button>
         <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-red-500/20 mb-4">
@@ -55,7 +55,7 @@ export const ErrorModal: React.FC<ErrorModalProps> = ({
         <h2
           id="error-modal-title"
           className="text-xl font-bold text-white mb-2">
-          Generation Failed
+          生成に失敗しました
         </h2>
         {message.map((m) => (
           <p className="text-gray-400">{m}</p>
@@ -64,12 +64,12 @@ export const ErrorModal: React.FC<ErrorModalProps> = ({
           <button
             onClick={onSelectKey}
             className="px-8 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
-            Add API Key
+            APIキーを追加
           </button>
           <button
             onClick={onClose}
             className="px-8 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
-            Close
+            閉じる
           </button>
         </div>
       </div>

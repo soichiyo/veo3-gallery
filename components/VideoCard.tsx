@@ -20,7 +20,7 @@ export const VideoCard: React.FC<VideoCardProps> = ({video, onPlay}) => {
       type="button"
       className="group w-full text-left bg-gray-800/50 rounded-lg overflow-hidden shadow-lg hover:shadow-gray-500/30 transform transition-all duration-300 hover:-translate-y-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
       onClick={() => onPlay(video)}
-      aria-label={`Play video: ${video.title}`}>
+      aria-label={`ビデオを再生: ${video.title}`}>
       <div className="relative">
         <video
           className="w-full h-48 object-cover pointer-events-none"

@@ -127,7 +127,7 @@ export const App: React.FC = () => {
 
       const newVideo: Video = {
         id: self.crypto.randomUUID(),
-        title: `Remix of "${originalVideo.title}"`,
+        title: `「${originalVideo.title}」のリミックス`,
         description: originalVideo.description,
         videoUrl: src,
       };
@@ -137,8 +137,8 @@ export const App: React.FC = () => {
     } catch (error) {
       console.error('Video generation failed:', error);
       setGenerationError([
-        'Veo 3 is only available on the Paid Tier.',
-        'Please select your Cloud Project to get started',
+        'Veo 3は有料ティアでのみ利用可能です。',
+        '開始するには、Cloudプロジェクトを選択してください',
       ]);
     } finally {
       setIsSaving(false);
@@ -162,10 +162,10 @@ export const App: React.FC = () => {
           <header className="p-6 md:p-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text inline-flex items-center gap-4">
               <VideoCameraIcon className="w-10 h-10 md:w-12 md:h-12" />
-              <span>Veo Gallery</span>
+              <span>Veoギャラリー</span>
             </h1>
             <p className="text-gray-400 mt-2 text-lg">
-              Select a video to generate your own variations
+              ビデオを選択して、独自のバリエーションを生成します
             </p>
           </header>
           <main className="px-4 md:px-8 pb-8">

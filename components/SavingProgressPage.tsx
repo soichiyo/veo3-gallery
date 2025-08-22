@@ -16,10 +16,10 @@ export const SavingProgressPage: React.FC = () => {
       aria-busy="true">
       <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-purple-500"></div>
       <h2 className="text-2xl font-bold text-white mt-8">
-        Creating your remix...
+        リミックスを作成中...
       </h2>
       <p className="text-gray-400 mt-2">
-        Please wait while we bring your vision to life.
+        あなたのビジョンを実現するまで、しばらくお待ちください。
       </p>
     </div>
   );
